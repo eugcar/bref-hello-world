@@ -1,6 +1,6 @@
 # bref-hello-world
 
-Symfony 5 application that checks the presence of the ads.txt file on a given URL.
+This is a first example of application using [bref](https://bref.sh/).
 
 ## Provisioning
 
