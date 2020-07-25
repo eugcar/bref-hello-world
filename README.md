@@ -29,3 +29,10 @@ To deploy the application, from project's root folder, run:
 ```
 docker run -it --rm --user $(id -u):$(id -g)  -v "$PWD":/usr/src/myapp -v "$PWD"/.aws:/.aws -v "$PWD"/.serverless:/.serverless -w /usr/src/myapp eugcar/php-serverless:7.4 serverless deploy
 ```
+
+### Invoke the function
+To invoke the application, from project's root folder, run:
+
+```
+docker run -it --rm --user $(id -u):$(id -g)  -v "$PWD":/usr/src/myapp -v "$PWD"/.aws:/.aws -v "$PWD"/.serverless:/.serverless -w /usr/src/myapp eugcar/php-serverless:7.4 serverless invoke -f <function-name>
+```
